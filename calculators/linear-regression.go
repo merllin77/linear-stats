@@ -4,7 +4,6 @@ import "errors"
 
 func LinearRegressionLine(data []int) (float64, float64, error) {
 	var a, b, n, sumX, sumY, sumXY, sumXX float64
-	// var a, b, n float64
 	n = float64(len(data))
 
 	if n <= 1 {
