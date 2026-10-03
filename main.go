@@ -19,7 +19,7 @@ func main() {
 	args := os.Args[1]
 	file, err := os.Open(args) // open file from arguments for reading
 	if err != nil {
-		fmt.Println("Error in reading:", args, " file")
+		fmt.Println("Error in reading file:", args)
 		return
 	}
 	defer file.Close() // close file when done reading
